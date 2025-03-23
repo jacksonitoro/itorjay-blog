@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itorjay blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Personal Blog</h1>
+        <p>Sharing thoughts and experiences</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main id="main-content">
+            <!-- Blog Posts -->
+            <section id="home" class="content-section active">
+                <article class="blog-post">
+                    <h2>First Blog Post</h2>
+                    <p class="post-meta">Posted on <time datetime="2025-03-23">March 23, 2025</time> in <a href="#" class="category">Personal</a></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <div class="comments-section">
+                        <h3>Comments</h3>
+                        <div class="comments-list"></div>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Your name" required>
+                            <textarea placeholder="Your comment" required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </article>
+                <!-- More blog posts can be added here -->
+            </section>
+
+            <!-- About Page -->
+            <section id="about" class="content-section">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </section>
+
+            <!-- Contact Page -->
+            <section id="contact" class="content-section">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>Categories</h3>
+                <ul class="categories">
+                    <li><a href="#" class="category-link">Personal</a></li>
+                    <li><a href="#" class="category-link">Technology</a></li>
+                    <li><a href="#" class="category-link">Agriculture</a></li>
+                    <li><a href="#" class="category-link">Travel</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Search</h3>
+                <input type="text" placeholder="Search...">
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 My Personal Blog. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
